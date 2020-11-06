@@ -1,0 +1,1 @@
+# vcpkg-build-cache
