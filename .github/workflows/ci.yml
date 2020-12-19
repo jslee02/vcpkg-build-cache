@@ -33,7 +33,6 @@ jobs:
       - name: Install vcpkg Packages
         env:
           VCPKG_PACKAGES: |
-            arrayfire
             boost-algorithm
             boost-compute
             boost-filesystem
@@ -49,7 +48,9 @@ jobs:
             fmt
             spdlog
             yaml-cpp
+          # arrayfire: https://github.com/microsoft/vcpkg/issues/15204
           VCPKG_PACKAGES_NOT_INSTALLABLE: |
+            arrayfire
             tbb
         shell: cmd
         run: |
