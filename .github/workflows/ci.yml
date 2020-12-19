@@ -48,8 +48,9 @@ jobs:
             fcl
             fmt
             spdlog
-            tbb
             yaml-cpp
+          VCPKG_PACKAGES_NOT_INSTALLABLE: |
+            tbb
         shell: cmd
         run: |
           %VCPKG_ROOT%\vcpkg.exe install --recurse --triplet x64-windows %VCPKG_PACKAGES%
