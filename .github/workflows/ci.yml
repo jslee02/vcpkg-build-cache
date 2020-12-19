@@ -14,7 +14,7 @@ jobs:
 
     env:
       VCPKG_ROOT: C:\vcpkg-build-cache\vcpkg
-      VCPKG_VERSION: "2020.11" # https://github.com/microsoft/vcpkg/commit/0bf3923f9fab4001c00f0f429682a0853b5749e0
+      VCPKG_VERSION: "66bac12" # https://github.com/microsoft/vcpkg/commit/0bf3923f9fab4001c00f0f429682a0853b5749e0
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
